@@ -3,7 +3,7 @@ module.exports = {
         {
             name: "site-a",
             script: "npm",
-            args: "start -- -p 3000",
+            args: "start -- -p 3002",
             cwd: "/home/deployer/websites/josuebarros",
             env: {
                 NODE_ENV: "production",
