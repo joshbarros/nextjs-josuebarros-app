@@ -12,7 +12,7 @@ interface GlassCardProps {
 export const GlassCard = ({ children, className = "", hover = true }: GlassCardProps) => {
   return (
     <motion.div
-      className={`glass-card p-6 ${className}`}
+      className={`p-6 rounded-[1.5rem] bg-[hsla(240,18%,8%,0.6)] backdrop-blur-[20px] border border-[hsla(0,0%,100%,0.08)] ${className}`}
       whileHover={hover ? {
         scale: 1.01,
         borderColor: "hsla(239, 84%, 67%, 0.3)",
