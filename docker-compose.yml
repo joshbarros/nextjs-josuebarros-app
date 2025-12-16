@@ -1,0 +1,17 @@
+services:
+  josuebarros:
+    build: .
+    container_name: josuebarros-app
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - RESEND_API_KEY=${RESEND_API_KEY}
+      - CONTACT_EMAIL=${CONTACT_EMAIL}
+      - FROM_EMAIL=${FROM_EMAIL}
+    networks:
+      - proxy
+    mem_limit: 512m
+
+networks:
+  proxy:
+    external: true
