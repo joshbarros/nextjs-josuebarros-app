@@ -11,6 +11,48 @@ export default {
     ],
     theme: {
         extend: {
+            typography: {
+                DEFAULT: {
+                    css: {
+                        '--tw-prose-body': 'hsl(var(--foreground) / 0.9)',
+                        '--tw-prose-headings': 'hsl(var(--foreground))',
+                        '--tw-prose-lead': 'hsl(var(--foreground) / 0.9)',
+                        '--tw-prose-links': 'hsl(var(--primary))',
+                        '--tw-prose-bold': 'hsl(var(--foreground))',
+                        '--tw-prose-counters': 'hsl(var(--foreground) / 0.6)',
+                        '--tw-prose-bullets': 'hsl(var(--foreground) / 0.6)',
+                        '--tw-prose-hr': 'hsl(var(--foreground) / 0.3)',
+                        '--tw-prose-quotes': 'hsl(var(--foreground))',
+                        '--tw-prose-quote-borders': 'hsl(var(--foreground) / 0.3)',
+                        '--tw-prose-captions': 'hsl(var(--foreground) / 0.6)',
+                        '--tw-prose-code': 'hsl(var(--foreground))',
+                        '--tw-prose-pre-code': 'hsl(var(--foreground))',
+                        '--tw-prose-pre-bg': 'hsl(var(--background))',
+                        '--tw-prose-th-borders': 'hsl(var(--foreground) / 0.3)',
+                        '--tw-prose-td-borders': 'hsl(var(--foreground) / 0.3)',
+                    }
+                },
+                invert: {
+                    css: {
+                        '--tw-prose-body': 'hsl(var(--foreground) / 0.9)',
+                        '--tw-prose-headings': 'hsl(var(--foreground))',
+                        '--tw-prose-lead': 'hsl(var(--foreground) / 0.9)',
+                        '--tw-prose-links': 'hsl(var(--primary))',
+                        '--tw-prose-bold': 'hsl(var(--foreground))',
+                        '--tw-prose-counters': 'hsl(var(--foreground) / 0.6)',
+                        '--tw-prose-bullets': 'hsl(var(--foreground) / 0.6)',
+                        '--tw-prose-hr': 'hsl(var(--foreground) / 0.3)',
+                        '--tw-prose-quotes': 'hsl(var(--foreground))',
+                        '--tw-prose-quote-borders': 'hsl(var(--foreground) / 0.3)',
+                        '--tw-prose-captions': 'hsl(var(--foreground) / 0.6)',
+                        '--tw-prose-code': 'hsl(var(--foreground))',
+                        '--tw-prose-pre-code': 'hsl(var(--foreground))',
+                        '--tw-prose-pre-bg': 'hsl(var(--background))',
+                        '--tw-prose-th-borders': 'hsl(var(--foreground) / 0.3)',
+                        '--tw-prose-td-borders': 'hsl(var(--foreground) / 0.3)',
+                    }
+                }
+            },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
                 display: ['Space Grotesk', 'sans-serif'],
