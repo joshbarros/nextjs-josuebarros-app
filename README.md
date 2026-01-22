@@ -13,13 +13,16 @@ A modern, SEO-optimized personal website and blog built with Next.js 15, TypeScr
 - **Contact Integration**: Email forms powered by Resend
 - **Analytics**: Plausible Analytics for privacy-focused tracking
 
-### Blog System
-- **Markdown Content**: LLM-friendly .md files with frontmatter
-- **Dynamic Categories**: Engineering, Strategy, Process sections
-- **Author Pages**: Personal branding and social links
-- **SEO Optimized**: Automatic meta generation, JSON-LD schema
-- **Fast Generation**: CLI automation for content creation
-- **Responsive Design**: Mobile-first with typography optimization
+### Blog System (ShipFast-TS Inspired)
+- **Markdown Content**: LLM-friendly .md files with frontmatter (title, description, categories, author, image, content)
+- **Dynamic Categories**: Engineering, Strategy, Process sections with filtering
+- **Author Pages**: Complete author profiles with bio, social links, and article listings
+- **SEO Optimized**: Automatic meta generation, JSON-LD schema, Open Graph, Twitter Cards
+- **Dark Mode Support**: Full dark theme compatibility with prose inversion
+- **Fast Generation**: CLI automation for content creation using Gemini AI
+- **Responsive Design**: Mobile-first with typography optimization (@tailwindcss/typography)
+- **Static Generation**: Pre-rendered blog pages for optimal performance
+- **Component Library**: Reusable CardArticle, BadgeCategory, Avatar, HeaderBlog components
 
 ### Technical Stack
 - **Framework**: Next.js 15 with App Router
@@ -43,11 +46,11 @@ title: "Your Amazing Title"
 description: "SEO-optimized description (150-160 chars)"
 categories: ["engineering", "strategy", "process"]
 author: "josue"
-publishedAt: "2024-01-22"
+publishedAt: "2026-01-22"
 image: "https://images.unsplash.com/your-image-url"
 ---
 
-# Main Heading
+# Your Heading
 
 Your content in markdown...
 
@@ -62,6 +65,16 @@ Your content in markdown...
 Code blocks:
 ```javascript
 console.log("Hello World!");
+```
+
+## Implementation Details
+
+The blog system processes this markdown through:
+1. **Gray-matter**: Parses frontmatter into structured data
+2. **Remark**: Converts markdown to HTML
+3. **Next.js SSG**: Pre-renders pages at build time
+4. **Tailwind Typography**: Applies consistent styling
+5. **Dark Mode**: Automatic prose inversion for dark themes
 ```
 ```
 
@@ -93,6 +106,27 @@ console.log("Hello World!");
 - **Image Optimization**: Alt text, lazy loading, proper sizing
 - **Schema Markup**: Article, Person, Service structured data
 - **Sitemap & Robots**: Automatic generation and submission
+
+## 📚 Blog Features
+
+### Content Management
+- **LLM Integration**: Designed for AI content generation (Gemini CLI compatible)
+- **Frontmatter Support**: YAML metadata for SEO and categorization
+- **Live Preview**: Instant updates on file save during development
+- **Version Control**: All content tracked in Git for collaboration
+
+### Performance & SEO
+- **Static Generation**: Pre-built pages for instant loading
+- **Image Optimization**: Next.js Image component with lazy loading
+- **Schema Markup**: Rich snippets for search results
+- **Sitemap Generation**: Automatic XML sitemap updates
+- **Robots.txt**: Proper crawler directives
+
+### Developer Experience
+- **TypeScript**: Full type safety for content and components
+- **Component Reusability**: Modular design for easy customization
+- **Responsive Testing**: Mobile-first development approach
+- **Build Optimization**: Turbopack for fast development builds
 
 ## 🛠️ Development
 
@@ -135,17 +169,27 @@ npm start
 ```
 ├── src/
 │   ├── app/                    # Next.js App Router
-│   │   ├── blog/              # Blog pages & components
-│   │   │   ├── _assets/       # Blog utilities
-│   │   │   │   ├── components/ # Reusable blog components
-│   │   │   │   └── content.tsx # Static blog data
-│   │   │   ├── [slug]/        # Dynamic article pages
-│   │   │   └── page.tsx       # Blog listing page
-│   │   ├── api/               # API routes
-│   │   └── page.tsx           # Homepage
-│   ├── components/            # Shared components
-│   ├── lib/                   # Utilities (getArticles.ts)
-│   └── data/                  # Legacy data (can be removed)
+│   │   ├── blog/              # Complete blog system
+│   │   │   ├── _assets/       # Blog core files
+│   │   │   │   ├── components/ # Blog UI components
+│   │   │   │   │   ├── CardArticle.tsx    # Article preview cards
+│   │   │   │   │   ├── BadgeCategory.tsx  # Category badges
+│   │   │   │   │   ├── Avatar.tsx         # Author avatars
+│   │   │   │   │   ├── CardCategory.tsx   # Category cards
+│   │   │   │   │   └── HeaderBlog.tsx     # Blog navigation header
+│   │   │   │   └── content.tsx            # Categories & authors data
+│   │   │   ├── author/[authorId]/        # Author profile pages
+│   │   │   │   └── page.tsx              # Dynamic author pages
+│   │   │   ├── [slug]/                   # Individual blog posts
+│   │   │   │   └── page.tsx              # Article detail pages
+│   │   │   ├── layout.tsx                # Blog-specific layout
+│   │   │   └── page.tsx                  # Blog listing page
+│   │   ├── api/                          # API routes
+│   │   └── page.tsx                      # Homepage
+│   ├── components/                       # Shared components
+│   ├── lib/                              # Utilities
+│   │   └── getArticles.ts               # Markdown processing & article loading
+│   └── data/                             # Legacy files (deprecated)
 ├── public/
 │   ├── blog/
 │   │   └── posts/             # Markdown blog posts
@@ -171,11 +215,13 @@ npm start
 - [x] Structured data (JSON-LD) for articles
 
 ### On-Page SEO
-- [x] Optimized title tags (<60 chars)
-- [x] Compelling meta descriptions (150-160 chars)
-- [x] Proper heading hierarchy (H1, H2, H3)
-- [x] Keyword optimization (natural, not stuffed)
-- [x] Image alt text and optimization
+- [x] Optimized title tags (<60 chars) with article-specific titles
+- [x] Compelling meta descriptions (150-160 chars) per article
+- [x] Proper heading hierarchy (H1, H2, H3) in markdown content
+- [x] Keyword optimization (natural integration in frontmatter & content)
+- [x] Image alt text and optimization (Unsplash integration)
+- [x] Internal linking (related articles, category navigation)
+- [x] URL structure optimization (slug-based, descriptive)
 
 ### Off-Page SEO
 - [x] Social sharing meta tags (Open Graph, Twitter Cards)
