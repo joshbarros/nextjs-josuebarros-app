@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { getArticles, authors } from "../../_assets/content";
+import { getArticles } from "@/lib/getArticles";
+import { authors } from "../../_assets/content";
 import BadgeCategory from "../../_assets/components/BadgeCategory";
 import CardArticle from "../../_assets/components/CardArticle";
 import { Metadata } from "next";
