@@ -153,7 +153,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
                     {/* ARTICLE CONTENT */}
                     <section
-                        className="w-full max-md:pt-4 md:pr-20 space-y-12 md:space-y-20 prose prose-lg max-w-none"
+                        className="w-full max-md:pt-4 md:pr-20 space-y-12 md:space-y-20 prose prose-lg max-w-none dark:prose-invert"
                         dangerouslySetInnerHTML={{ __html: article.content }}
                     />
                 </div>

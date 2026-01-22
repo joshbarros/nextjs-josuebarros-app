@@ -4,7 +4,7 @@ title: "The MVP Testing Framework: Validating Ideas Fast"
 description: "A systematic approach to testing your MVP hypothesis. Stop guessing and start validating with data-driven experiments."
 categories: ["process", "strategy"]
 author: "josue"
-publishedAt: "2024-01-25"
+publishedAt: "2026-01-25"
 image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
 ---
 

@@ -4,7 +4,7 @@ title: "Scaling Your MVP: When to Add a Team"
 description: "Growing from solo founder to team leader. Know when your MVP needs more hands and how to hire the right people."
 categories: ["strategy", "process"]
 author: "josue"
-publishedAt: "2024-01-22"
+publishedAt: "2026-01-22"
 image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop"
 ---
 

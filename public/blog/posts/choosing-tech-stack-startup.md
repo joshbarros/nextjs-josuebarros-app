@@ -4,7 +4,7 @@ title: "How to Choose Your Startup's Tech Stack in 2024"
 description: "React or Vue? Go or Node? The answer depends on one thing most founders ignore: who's going to maintain this code?"
 categories: ["strategy"]
 author: "josue"
-publishedAt: "2024-01-08"
+publishedAt: "2026-01-08"
 image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop"
 ---
 

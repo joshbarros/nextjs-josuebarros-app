@@ -4,7 +4,7 @@ title: "Post-MVP: Building for Scale vs. Iteration"
 description: "You've validated your idea—now what? The critical decisions between scaling infrastructure and iterating on features."
 categories: ["engineering", "strategy"]
 author: "josue"
-publishedAt: "2024-01-28"
+publishedAt: "2026-01-28"
 image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=400&fit=crop"
 ---
 

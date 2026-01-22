@@ -4,7 +4,7 @@ title: "Why Most MVPs Fail: The Hidden Cost of Technical Debt"
 description: "Speed matters, but cutting corners on architecture creates compounding problems. Here's how to ship fast without sacrificing your future."
 categories: ["engineering"]
 author: "josue"
-publishedAt: "2024-01-15"
+publishedAt: "2026-01-15"
 image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop"
 ---
 

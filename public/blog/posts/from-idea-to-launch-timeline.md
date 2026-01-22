@@ -4,7 +4,7 @@ title: "From Idea to Launch: A Realistic Timeline for Your MVP"
 description: "Forget the 'build in a weekend' hype. Here's what actually happens when you build a product that works."
 categories: ["process"]
 author: "josue"
-publishedAt: "2024-01-01"
+publishedAt: "2026-01-01"
 image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&h=400&fit=crop"
 ---
 
