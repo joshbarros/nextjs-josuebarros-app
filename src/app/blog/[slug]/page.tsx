@@ -118,14 +118,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <div className="flex flex-col md:flex-row">
                     {/* SIDEBAR WITH AUTHORS AND 3 RELATED ARTICLES */}
                     <section className="max-md:pb-4 md:pl-12 max-md:border-b md:border-l md:order-last md:w-72 shrink-0 border-base-content/10">
-                        <p className="text-base-content/80 text-sm mb-2 md:mb-3">
+                        <p className="text-base-content/80 dark:text-gray-300 text-sm mb-2 md:mb-3">
                             Posted by
                         </p>
                         <Avatar article={article} />
 
                         {articlesRelated.length > 0 && (
                             <div className="hidden md:block mt-12">
-                                <p className=" text-base-content/80 text-sm  mb-2 md:mb-3">
+                                <p className="text-base-content/80 dark:text-gray-300 text-sm mb-2 md:mb-3">
                                     Related reading
                                 </p>
                                 <div className="space-y-2 md:space-y-5">
@@ -134,14 +134,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                                             <p className="mb-0.5">
                                                 <Link
                                                     href={`/blog/${article.slug}`}
-                                                    className="link link-hover hover:link-primary font-medium"
+                                                    className="link link-hover hover:link-primary font-medium dark:text-gray-200 dark:hover:text-primary"
                                                     title={article.title}
                                                     rel="bookmark"
                                                 >
                                                     {article.title}
                                                 </Link>
                                             </p>
-                                            <p className="text-base-content/80 max-w-full text-sm">
+                                            <p className="text-base-content/80 dark:text-gray-400 max-w-full text-sm">
                                                 {article.description}
                                             </p>
                                         </div>
